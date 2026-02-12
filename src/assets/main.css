@@ -1,0 +1,25 @@
+@import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=Cascadia+Code:ital,wght@0,200..700;1,200..700&family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap');
+
+.contenedor {
+    max-width: 1280px;
+    margin: 0 auto;
+}
+.section{
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+
+body {
+    font-family: var(--fuente-principal)
+}
+
+:root {
+    --color-pricipal: #0B0E14;
+    --color-cards: #161B22;
+    --color-acento: #5865F2;
+    --color-accion: #00F5FF;
+    --texto: #E6EDF3;
+    --fuente-principal: 'JetBrains Mono', sans-serif;
+}
