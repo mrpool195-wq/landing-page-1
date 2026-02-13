@@ -4,7 +4,8 @@
             <!-- Logo -->
             <div class="logo">
                 <a href="">
-                    <h1 class="text-blue-100">Tecnologias</h1>
+                    <!-- <h1 class="text-blue-100">Tecnologias</h1> -->
+                    <img src="/src/assets/img/TECNOLOGIAS INTEGRALES - white version.png" class="w-70" alt="">
                 </a>
             </div>
 
@@ -12,54 +13,37 @@
             <div class="opciones">
                 <ul class="menu-list">
                     <a href="">
-                        <li>Inicio</li>
+                        <router-link to="/">Inicio</router-link>
                     </a>
                     <a href="">
-                        <li>Opcion1</li>
+                        <router-link to="/quienes-somos">Quienes somos</router-link>
                     </a>
                     <a href="">
-                        <li>Opcion2</li>
-                    </a>
-                    <a href="">
-                        <li>Opcion3</li>
-                    </a>
-                    <a href="">
-                        <li>Opcion4</li>
+                        <li>Ccntáctanos</li>
                     </a>
                 </ul>
             </div>
 
             <!-- Contacto (desktop) -->
             <div class="contacto text-blue-200">
-                Contactanos
+                Contacto &nbsp; 9997675868
             </div>
 
             <!-- Botón hamburguesa (móvil) -->
             <button class="menu-toggle" @click="menuAbierto = !menuAbierto" aria-label="Abrir menú">
-                <!-- <img src="/src/assets/icons/menu-svgrepo-com.svg" alt="menú" class="menu-icon"> -->
                 <iconMenu />
-
             </button>
         </div>
 
         <!-- Menú móvil desplegable -->
         <div v-if="menuAbierto" class="mobile-menu">
             <ul class="mobile-menu-list">
+                <router-link to="/" @click="menuAbierto = false">Inicio</router-link>
+                <router-link to="/quienes-somos" @click="menuAbierto = false">Quienes somos</router-link>
                 <a href="" @click="menuAbierto = false">
-                    <li>Inicio</li>
+                    <li>Contáctanos</li>
                 </a>
-                <a href="" @click="menuAbierto = false">
-                    <li>Opcion1</li>
-                </a>
-                <a href="" @click="menuAbierto = false">
-                    <li>Opcion2</li>
-                </a>
-                <a href="" @click="menuAbierto = false">
-                    <li>Opcion3</li>
-                </a>
-                <a href="" @click="menuAbierto = false">
-                    <li>Opcion4</li>
-                </a>
+
                 <li class="mobile-contacto">
                     <a href="">Contactanos</a>
                 </li>
@@ -78,7 +62,7 @@ const menuAbierto = ref(false)
 
 <style scoped>
 .backround-nav {
-    background-color: var(--color-acento);
+    background-color: var(--color-pricipal);
 }
 
 .logo h1 {
