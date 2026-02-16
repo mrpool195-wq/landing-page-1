@@ -19,7 +19,7 @@
                         <router-link to="/quienes-somos">Quienes somos</router-link>
                     </a>
                     <a href="">
-                        <li>Ccntáctanos</li>
+                        <li>Contáctanos</li>
                     </a>
                 </ul>
             </div>

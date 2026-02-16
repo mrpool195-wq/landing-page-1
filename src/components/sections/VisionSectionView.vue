@@ -1,5 +1,5 @@
 <template>
-    <div class="contenedor flex gap-[10vw] justify-center">
+    <div class="contenedor flex gap-[10vw] justify-center contenedor-vision">
         <div class="w-1/2">
             <h3 class="h3-vision">Vision</h3>
             <p class="text-white text-justify pt-[30px]">
@@ -22,5 +22,19 @@
     padding-bottom: 15px;
     font-weight: 900;
     color: var(--texto);
+}
+
+@media (max-width: 768px) {
+    .contenedor-vision {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+    }
+
+    .contenedor-vision div {
+        width: 100%;
+        padding: 40px;
+    }
 }
 </style>

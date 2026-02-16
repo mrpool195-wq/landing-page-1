@@ -3,7 +3,8 @@
 
     <HeroSectionView />
 
-
+    <ServicioSection />
+    <StatsSection />
 
 
 
@@ -19,4 +20,6 @@ export default {
 <script setup>
 import NavBar from '@/components/layout/NavBar.vue';
 import HeroSectionView from '@/components/sections/HeroSectionView.vue';
+import ServicioSection from '@/components/sections/ServicioSection.vue';
+import StatsSection from '@/components/sections/StatsSection.vue';
 </script>

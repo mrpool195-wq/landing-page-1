@@ -8,7 +8,7 @@
         </div>
     </div>
     <section class="section">
-        <div class="contenedor flex gap-[10vw] justify-center">
+        <div class="contenedor flex gap-[10vw] justify-center contenedor-mision">
             <div class="w-1/2">
                 <img src="../assets/img/compu1.jpg" alt="" class="rounded-[40px]">
             </div>
@@ -28,27 +28,127 @@
         <VisionSectionView />
     </section>
 
-    <section class="section">
-        <div class="contenedor contenido-valoress">
-            <div class="card-valor border rounded-[20px] p-4 flex gap-8">
-                <div class="bg-blue-500 w-100">
-                    <iconMenu />
+    <section class="section bg-(--texto)">
+        <div class="contenedor">
+            <div class="valores-container p-4">
+                <h2 class="">Nuestros Valores</h2>
+                <div class="p-6 flex gap-8 border border-(--color-neutro) rounded-xl bg-(--color-neutro) mt-4">
+                    <div
+                        class="elemento-valor bg-(--color-valores) text-white rounded-full w-15 h-15 flex items-center justify-center flex-shrink-0">
+                        <h4>1</h4>
+                    </div>
+                    <div>
+                        <h3>Proactividad</h3>
+                        <p>Anticipamos las necesidades tecnológicas de nuestros clientes antes de que se conviertan en
+                            problemas
+                            críticos. Monitoreamos constantemente el rendimiento de los sistemas, identificamos
+                            oportunidades de
+                            mejora y recomendamos actualizaciones o soluciones preventivas que optimicen la
+                            infraestructura
+                            tecnológica y eviten interrupciones en las operaciones del negocio.</p>
+                    </div>
                 </div>
-                <div>
-                    <h4 class="font-[1000] text-[25px] pb-4">Proactividad</h4>
-                    <p>Anticipamos las necesidades tecnológicas de nuestros clientes antes de que se conviertan en
-                        problemas críticos. Monitoreamos constantemente el rendimiento de los sistemas, identificamos
-                        oportunidades de mejora y recomendamos actualizaciones o soluciones preventivas que optimicen la
-                        infraestructura tecnológica y eviten interrupciones en las operaciones del negocio.</p>
+
+                <div class="p-6 flex gap-8 border border-(--color-neutro) rounded-xl bg-(--color-neutro) mt-4">
+                    <div
+                        class="elemento-valor bg-(--color-valores) text-white rounded-full w-15 h-15 flex items-center justify-center flex-shrink-0">
+                        <h4>2</h4>
+                    </div>
+                    <div>
+                        <h3>Colaboración</h3>
+                        <p>Trabajamos en estrecha alianza con nuestros clientes, construyendo relaciones basadas en la
+                            comunicación abierta y el trabajo en equipo. Entendemos que el éxito tecnológico requiere la
+                            participación activa de ambas partes, por lo que fomentamos el intercambio de conocimientos,
+                            la
+                            capacitación y la co-creación de soluciones que realmente respondan a sus desafíos
+                            operativos.</p>
+                    </div>
                 </div>
+
+                <div class="p-6 flex gap-8 border border-(--color-neutro) rounded-xl bg-(--color-neutro) mt-4">
+                    <div
+                        class="elemento-valor bg-(--color-valores) text-white rounded-full w-15 h-15 flex items-center justify-center flex-shrink-0">
+                        <h4>3</h4>
+                    </div>
+                    <div>
+                        <h3>Eficiencia</h3>
+                        <p>Optimizamos recursos, tiempos y procesos para entregar soluciones tecnológicas que maximicen
+                            el
+                            retorno de inversión de nuestros clientes. Diseñamos arquitecturas tecnológicas escalables y
+                            sostenibles, automatizamos procesos repetitivos y garantizamos que cada implementación
+                            genere
+                            mejoras medibles en productividad y reducción de costos operativos.</p>
+                    </div>
+                </div>
+
+                <div class="p-6 flex gap-8 border border-(--color-neutro) rounded-xl bg-(--color-neutro) mt-4">
+                    <div
+                        class="elemento-valor bg-(--color-valores) text-white rounded-full w-15 h-15 flex items-center justify-center flex-shrink-0">
+                        <h4>4</h4>
+                    </div>
+                    <div>
+                        <h3>Seguridad</h3>
+                        <p>Priorizamos la protección de la información y los activos digitales de nuestros clientes en
+                            cada
+                            solución que desarrollamos. Implementamos las mejores prácticas de ciberseguridad, cumplimos
+                            con
+                            estándares internacionales de protección de datos y diseñamos sistemas resilientes que
+                            salvaguarden
+                            la integridad, confidencialidad y disponibilidad de la información crítica del negocio.</p>
+                    </div>
+                </div>
+
+                <div class="p-6 flex gap-8 border border-(--color-neutro) rounded-xl bg-(--color-neutro) mt-4">
+                    <div
+                        class="elemento-valor bg-(--color-valores) text-white rounded-full w-15 h-15 flex items-center justify-center flex-shrink-0">
+                        <h4>5</h4>
+                    </div>
+                    <div>
+                        <h3>Responsabilidad</h3>
+                        <p>Asumimos plena accountability por el impacto y funcionamiento de las soluciones tecnológicas
+                            que
+                            entregamos. Documentamos adecuadamente cada implementación, brindamos soporte continuo
+                            post-venta,
+                            atendemos incidencias con urgencia y nos hacemos cargo de resolver cualquier problema
+                            derivado de
+                            nuestros servicios hasta la completa satisfacción del cliente</p>
+                    </div>
+                </div>
+
+
+
+
+
+
+
             </div>
         </div>
     </section>
 </template>
 
 <style scoped>
+.card-valor {
+    background-color: var(--color-acento);
+}
+
 .contenido-valores {
     background-color: var(--color-valores);
+}
+
+/* .valores-container {} */
+
+.valores-container h2 {
+    font-size: 43px;
+    text-align: center;
+    padding-bottom: 40px;
+    color: var(--color-valores);
+    font-weight: bold;
+}
+
+.valores-container h3 {
+    font-size: 20px;
+    font-weight: bold;
+    padding-bottom: 20px;
 }
 
 .h1-hero {
@@ -80,6 +180,18 @@
         text-align: center;
     }
 
+    .contenedor-mision {
+        display: flex;
+        flex-direction: column-reverse;
+        text-align: center;
+        align-items: center;
+    }
+
+    .contenedor-mision div {
+        width: 100%;
+        padding: 40px;
+    }
+
 }
 </style>
 <script>
@@ -91,5 +203,4 @@ export default {
 <script setup>
 import NavBar from '@/components/layout/NavBar.vue';
 import VisionSectionView from '@/components/sections/VisionSectionView.vue';
-import iconMenu from '@/components/icons/iconMenu.vue';
 </script>

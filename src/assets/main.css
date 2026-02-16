@@ -1,15 +1,16 @@
 @import "tailwindcss";
-@import url('https://fonts.googleapis.com/css2?family=Cascadia+Code:ital,wght@0,200..700;1,200..700&family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
 
 :root {
     --color-pricipal: #120422;
     --color-cards: #161B22;
     --color-acento: #B4A0CB;
     --color-valores: #543676;
+    --color-neutro: #dedede;
     --texto: #E6EDF3;
-    --fuente-principal: "Space Mono", sans-serif;
-    --fuente-1: 'JetBrains Mono', sans-serif;
+    --fondo-1: #E2D0F6;
+    --fuente-principal: "Raleway";
+    --fuente-secundaria: "JetBrains Mono";
 }
 
 
@@ -28,5 +29,5 @@
 }
 
 body {
-    font-family: var(--fuente-1);
+    font-family: var(--fuente-secundaria);
 }
