@@ -124,6 +124,7 @@
             </div>
         </div>
     </section>
+    <FooTer />
 </template>
 
 <style scoped>
@@ -201,6 +202,7 @@ export default {
 }
 </script>
 <script setup>
+import FooTer from '@/components/layout/FooTer.vue';
 import NavBar from '@/components/layout/NavBar.vue';
 import VisionSectionView from '@/components/sections/VisionSectionView.vue';
 </script>
