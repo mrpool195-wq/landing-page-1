@@ -4,7 +4,7 @@
         <div class="absolute inset-0 bg-[#543676]/60"></div>
 
         <!-- Contenido por encima -->
-        <div class="contenedor relative z-10 flex items-center justify-center gap-[10vw]">
+        <div class="contenedor relative z-10 flex flex-wrap items-center justify-center gap-[10vw]">
             <StatCard valor="150+" description="PROYECTOS ENTREGADOS" />
             <StatCard valor="99.9%" description="PROYECTOS ENTREGADOS" />
             <StatCard valor="50+" description="PROYECTOS ENTREGADOS" />

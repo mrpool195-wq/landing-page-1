@@ -1,9 +1,10 @@
 <template>
     <section>
         <div class="contenedor contenedor-servicios pt-[100px] pb-[100px]">
-            <h2 class="font-bold">Nuestros <span class="text-(--color-valores)">Servicios</span></h2>
-            <h3 class="text-center">lo que mejor hacemos</h3>
-            <p class="text-center text-gray-400">Servicios de consultoría en computación </p>
+            <h2 class="!text-[40px] font-bold">Nuestros <span
+                    class="!text-[40px] text-(--color-valores)">Servicios</span></h2>
+            <h3 class="text-center !text-[20px] py-6">lo que mejor hacemos</h3>
+            <p class="text-center text-gray-400 !text-[16px]">Servicios de consultoría en computación </p>
             <div class="servicios-cards mt-6">
                 <CardService :icon="CodeBracketIcon" title="Desarrollo a Medida"
                     info="Aplicaciones web y móviles construidas con las últimas tecnologías y mejores prácticas." />
@@ -28,14 +29,10 @@
 
 <style>
 .contenedor-servicios h2 {
-    font-size: 40px;
     text-align: center;
 }
 
-.contenedor h3 {
-    font-size: 22px;
-    padding-bottom: 10px;
-}
+
 
 .servicios-cards {
     display: flex;

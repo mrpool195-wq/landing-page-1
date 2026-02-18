@@ -1,7 +1,7 @@
 <template>
     <div class="contenedor flex gap-[10vw] justify-center contenedor-vision">
         <div class="w-1/2">
-            <h3 class="h3-vision">Vision</h3>
+            <h3 class="h3-vision ">Vision</h3>
             <p class="text-white text-justify pt-[30px]">
                 Ser la empresa líder en soluciones tecnológicas integrales, reconocida por nuestra excelencia
                 técnica, capacidad de innovación y compromiso con el éxito de nuestros clientes. Aspiramos a

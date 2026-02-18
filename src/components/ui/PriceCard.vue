@@ -1,6 +1,23 @@
+<script setup>
+defineProps({
+    titulo_plan: String,
+    descripcion_plan: String,
+    precio: String,
+    popular: {
+        type: Boolean,
+        default: false
+    },
+    caracteristicas: Array
+})
+
+import { CheckCircleIcon } from '@heroicons/vue/24/solid';
+import { StarIcon } from '@heroicons/vue/24/solid';
+
+
+</script>
 <template>
-    <div class="tarjeta-precio border border-gray-300 w-1/4 rounded-[20px] py-6 px-4"
-        :class="{ 'bg-gradient-to-t from-[#983dff] to-texto': popular }">
+    <div class="tarjeta-precio border border-gray-300 w-100 rounded-[20px] py-6 px-4 h-200"
+        :class="{ 'bg-gradient-to-t from-[#983dff] border-4 !border-[#983dff] !h-210': popular }">
         <!-- <span v-if="popular" class="badge">El más vendido</span> -->
         <div class="pb-[20px]" :class="{ 'flex align-middle justify-between': popular }">
             <h2 class="align-middle">{{ titulo_plan }}</h2>
@@ -39,21 +56,3 @@
     padding-bottom: 20px;
 }
 </style>
-
-<script setup>
-defineProps({
-    titulo_plan: String,
-    descripcion_plan: String,
-    precio: String,
-    popular: {
-        type: Boolean,
-        default: false
-    },
-    caracteristicas: Array
-})
-
-import { CheckCircleIcon } from '@heroicons/vue/24/solid';
-import { StarIcon } from '@heroicons/vue/24/solid';
-
-
-</script>

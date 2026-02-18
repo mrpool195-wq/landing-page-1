@@ -19,7 +19,7 @@
                         <router-link to="/quienes-somos">Quienes somos</router-link>
                     </a>
                     <a href="">
-                        <li>Contáctanos</li>
+                        <router-link to="/contacto">Contacto</router-link>
                     </a>
                 </ul>
             </div>
@@ -36,7 +36,7 @@
         </div>
 
         <!-- Menú móvil desplegable -->
-        <div v-if="menuAbierto" class="mobile-menu">
+        <!-- <div v-if="menuAbierto" class="mobile-menu">
             <ul class="mobile-menu-list">
                 <router-link to="/" @click="menuAbierto = false">Inicio</router-link>
                 <router-link to="/quienes-somos" @click="menuAbierto = false">Quienes somos</router-link>
@@ -48,7 +48,17 @@
                     <a href="">Contactanos</a>
                 </li>
             </ul>
-        </div>
+        </div> -->
+        <Transition name="sandwich">
+            <div v-if="menuAbierto" class="mobile-menu">
+                <ul class="mobile-menu-list">
+                    <router-link to="/" @click="menuAbierto = false">Inicio</router-link>
+                    <router-link to="/quienes-somos" @click="menuAbierto = false">Quienes somos</router-link>
+                    <router-link to="/contacto" @click="menuAbierto = false">Contacto</router-link>
+                </ul>
+            </div>
+        </Transition>
+
     </nav>
 </template>
 
@@ -61,6 +71,26 @@ const menuAbierto = ref(false)
 </script>
 
 <style scoped>
+.sandwich-enter-active,
+.sandwich-leave-active {
+    transition: max-height 0.28s ease, opacity 0.28s ease, transform 0.28s ease;
+    overflow: hidden;
+}
+
+.sandwich-enter-from,
+.sandwich-leave-to {
+    max-height: 0;
+    opacity: 0;
+    transform: translateY(-8px);
+}
+
+.sandwich-enter-to,
+.sandwich-leave-from {
+    max-height: 320px;
+    opacity: 1;
+    transform: translateY(0);
+}
+
 .backround-nav {
     background-color: var(--color-pricipal);
 }

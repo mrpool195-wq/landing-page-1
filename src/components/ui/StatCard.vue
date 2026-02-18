@@ -1,5 +1,5 @@
 <template>
-    <div class="tarjeta-servicio sw-1/2">
+    <div class="tarjeta-servicio w-50">
         <h2 class="">{{ valor }}</h2>
         <p class="text-center text-white">{{ description }}</p>
     </div>

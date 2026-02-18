@@ -1,7 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 @import "tailwindcss";
-@import url('https://fonts.googleapis.com/css2?family=Cascadia+Code:ital,wght@0,200..700;1,200..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
 
 :root {
+    --fuente1: 'Montserrat', sans-serif;
+
     --color-pricipal: #120422;
     --color-vibrante: #7700ff;
     --color-vibrante2: #983dff;
@@ -10,10 +12,12 @@
     --color-neutro: #dedede;
     --texto: #E6EDF3;
     --fondo-1: #E2D0F6;
-    --fuente-principal: "Raleway";
-    --fuente-secundaria: "Cascadia Code";
 }
 
+* {
+    font-family: var(--fuente1);
+    font-size: 14px;
+}
 
 .contenedor {
     max-width: 1280px;
@@ -28,7 +32,3 @@
 .section-bg {
     background-color: var(--color-acento);
 }
-
-/* body {
-    font-family: var(--fuente-secundaria);
-} */

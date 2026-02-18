@@ -6,9 +6,10 @@ import PriceCard from '../ui/PriceCard.vue';
 <template>
     <section class="section">
         <div class="contenedor ">
-            <h2 class="text-[40px] font-bold text-center">Nuestros <span class="text-(--color-valores)">Precios</span>
+            <h2 class="!text-[40px] font-bold text-center">Nuestros <span
+                    class="!text-[40px] text-(--color-valores)">Precios</span>
             </h2>
-            <div class="flex gap-8 justify-center my-[90px] ">
+            <div class="contneedor-precios gap-8 justify-center my-[90px] ">
                 <PriceCard titulo_plan="Basic pack"
                     descripcion_plan="So I started to walk into the water. I won't lie to you boys, I was terrified. B"
                     precio="$ 999/mes" :caracteristicas="[
@@ -46,3 +47,9 @@ import PriceCard from '../ui/PriceCard.vue';
         </div>
     </section>
 </template>
+<style scoped>
+.contneedor-precios {
+    display: flex;
+    flex-wrap: wrap;
+}
+</style>
