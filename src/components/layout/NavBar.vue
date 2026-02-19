@@ -1,5 +1,7 @@
 <template>
-    <nav class="backround-nav">
+    <nav class="sticky top-0 transition-all duration-300 z-10000" :class="isScrollingDown
+        ? 'bg-[rgba(59,58,60,0.55)] backdrop-blur-md border-b border-white/15 shadow-lg'
+        : 'bg-[var(--color-pricipal)]'">
         <div class="contenedor flex justify-between items-center p-4">
             <!-- Logo -->
             <div class="logo">
@@ -16,7 +18,7 @@
                         <router-link to="/">Inicio</router-link>
                     </a>
                     <a href="">
-                        <router-link to="/quienes-somos">Quienes somos</router-link>
+                        <router-link to="/quienes-somos">Nosotros</router-link>
                     </a>
                     <a href="">
                         <router-link to="/contacto">Contacto</router-link>
@@ -25,9 +27,9 @@
             </div>
 
             <!-- Contacto (desktop) -->
-            <div class="contacto text-blue-200">
-                Contacto &nbsp; 9997675868
-            </div>
+            <a href=""
+                class="bg-(--blanco1) inline-block py-4 px-8 rounded-md font-semibold !text-[14px] transition-shadow duration-300 hover:shadow-[0_0_16px_#dddddd]">Contactanos
+            </a>
 
             <!-- Botón hamburguesa (móvil) -->
             <button class="menu-toggle" @click="menuAbierto = !menuAbierto" aria-label="Abrir menú">
@@ -65,9 +67,27 @@
 <script setup>
 import iconMenu from '@/components/icons/iconMenu.vue';
 
-import { ref } from 'vue'
+import { ref, onMounted, onUnmounted } from 'vue'
 
 const menuAbierto = ref(false)
+const isScrollingDown = ref(false)
+const lastScrollY = ref(0)
+
+const handleScroll = () => {
+    const currentY = window.scrollY
+
+    isScrollingDown.value = currentY > lastScrollY.value && currentY > 20
+    lastScrollY.value = currentY
+}
+
+onMounted(() => {
+    lastScrollY.value = window.scrollY
+    window.addEventListener('scroll', handleScroll)
+})
+
+onUnmounted(() => {
+    window.removeEventListener('scroll', handleScroll)
+})
 </script>
 
 <style scoped>
@@ -89,10 +109,6 @@ const menuAbierto = ref(false)
     max-height: 320px;
     opacity: 1;
     transform: translateY(0);
-}
-
-.backround-nav {
-    background-color: var(--color-pricipal);
 }
 
 .logo h1 {

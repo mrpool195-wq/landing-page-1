@@ -1,9 +1,15 @@
 <template>
     <NavBar />
-    <div class="backround-hero pt-[100px] pb-[100px]">
+    <div
+        class="bg-(--color-pricipal) bg-[radial-gradient(#4F4E50_1px,transparent_1px)] bg-[size:20px_20px]  pt-[100px] pb-[100px] ">
         <div class="contenedor hero">
             <div class="grid place-items-center">
-                <h1 class=" text-white h1-hero">Quienes somos</h1>
+                <h1 class=" text-white h1-hero">Nosotros</h1>
+                <p class="text-(--blanco1) !text-[20px] py-6">Conoce quiénes somos, nuestra misión, visión y los valores
+                    que
+                    guían cada
+                    proyecto que emprendemos.
+                </p>
             </div>
         </div>
     </div>
@@ -24,18 +30,25 @@
         </div>
     </section>
 
-    <section class="section section-bg">
+    <section class="section bg-(--subtitulos)">
         <VisionSectionView />
     </section>
 
-    <section class="section bg-(--texto)">
+    <section class="section">
         <div class="contenedor">
             <div class="valores-container p-4">
                 <h2 class="">Nuestros Valores</h2>
                 <div class="p-6 flex gap-8 border border-(--color-neutro) rounded-xl bg-(--color-neutro) mt-4">
                     <div
-                        class="elemento-valor bg-(--color-valores) text-white rounded-full w-15 h-15 flex items-center justify-center flex-shrink-0">
-                        <h4>1</h4>
+                        class="elemento-valor bg-(--color-pricipal) text-white rounded-full w-15 h-15 flex items-center justify-center flex-shrink-0">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                            <g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                stroke-width="2">
+                                <path
+                                    d="M4 13a8 8 0 0 1 7 7a6 6 0 0 0 3-5a9 9 0 0 0 6-8a3 3 0 0 0-3-3a9 9 0 0 0-8 6a6 6 0 0 0-5 3" />
+                                <path d="M7 14a6 6 0 0 0-3 6a6 6 0 0 0 6-3m4-8a1 1 0 1 0 2 0a1 1 0 1 0-2 0" />
+                            </g>
+                        </svg>
                     </div>
                     <div>
                         <h3>Proactividad</h3>
@@ -51,8 +64,15 @@
 
                 <div class="p-6 flex gap-8 border border-(--color-neutro) rounded-xl bg-(--color-neutro) mt-4">
                     <div
-                        class="elemento-valor bg-(--color-valores) text-white rounded-full w-15 h-15 flex items-center justify-center flex-shrink-0">
-                        <h4>2</h4>
+                        class="elemento-valor bg-(--color-pricipal) text-white rounded-full w-15 h-15 flex items-center justify-center flex-shrink-0">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 14 14">
+                            <g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round">
+                                <path
+                                    d="M12.5.5h-11a1 1 0 0 0-1 1v11a1 1 0 0 0 1 1h11a1 1 0 0 0 1-1v-11a1 1 0 0 0-1-1" />
+                                <path d="M7 .5v2.132a1.5 1.5 0 1 0 0 2.236v4.264a1.5 1.5 0 1 1 0 2.236V13.5" />
+                                <path d="M.5 7h2.132a1.5 1.5 0 1 0 2.236 0h4.264a1.5 1.5 0 1 1 2.236 0H13.5" />
+                            </g>
+                        </svg>
                     </div>
                     <div>
                         <h3>Colaboración</h3>
@@ -67,8 +87,12 @@
 
                 <div class="p-6 flex gap-8 border border-(--color-neutro) rounded-xl bg-(--color-neutro) mt-4">
                     <div
-                        class="elemento-valor bg-(--color-valores) text-white rounded-full w-15 h-15 flex items-center justify-center flex-shrink-0">
-                        <h4>3</h4>
+                        class="elemento-valor bg-(--color-pricipal) text-white rounded-full w-15 h-15 flex items-center justify-center flex-shrink-0">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                            <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                stroke-width="2"
+                                d="M17.684 3.603c.521-.659.03-1.603-.836-1.603h-6.716a1.06 1.06 0 0 0-.909.502l-5.082 8.456c-.401.666.103 1.497.908 1.497h3.429l-3.23 8.065c-.467 1.02.795 1.953 1.643 1.215L20 9.331h-6.849z" />
+                        </svg>
                     </div>
                     <div>
                         <h3>Eficiencia</h3>
@@ -83,8 +107,18 @@
 
                 <div class="p-6 flex gap-8 border border-(--color-neutro) rounded-xl bg-(--color-neutro) mt-4">
                     <div
-                        class="elemento-valor bg-(--color-valores) text-white rounded-full w-15 h-15 flex items-center justify-center flex-shrink-0">
-                        <h4>4</h4>
+                        class="elemento-valor bg-(--color-pricipal) text-white rounded-full w-15 h-15 flex items-center justify-center flex-shrink-0">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                            <g fill="none">
+                                <path d="M3 4.65V12c0 7.35 9 10.5 9 10.5s9-3.15 9-10.5V4.65L12 1.5z"
+                                    clip-rule="evenodd" />
+                                <path stroke="currentColor" stroke-linecap="square" stroke-width="2"
+                                    d="M3 4.65V12c0 7.35 9 10.5 9 10.5s9-3.15 9-10.5V4.65L12 1.5z"
+                                    clip-rule="evenodd" />
+                                <path stroke="currentColor" stroke-linecap="square" stroke-width="2"
+                                    d="M8.173 11.172L11 14l5.657-5.657" />
+                            </g>
+                        </svg>
                     </div>
                     <div>
                         <h3>Seguridad</h3>
@@ -100,8 +134,11 @@
 
                 <div class="p-6 flex gap-8 border border-(--color-neutro) rounded-xl bg-(--color-neutro) mt-4">
                     <div
-                        class="elemento-valor bg-(--color-valores) text-white rounded-full w-15 h-15 flex items-center justify-center flex-shrink-0">
-                        <h4>5</h4>
+                        class="elemento-valor bg-(--color-pricipal) text-white rounded-full w-15 h-15 flex items-center justify-center flex-shrink-0">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                            <path fill="currentColor"
+                                d="M12.75 2.75V4.5h1.975c.351 0 .694.106.984.303l1.697 1.154q.063.042.14.043h4.102a.75.75 0 0 1 0 1.5H20.07l3.366 7.68a.75.75 0 0 1-.23.896q-.15.111-.31.206a6 6 0 0 1-.79.399a7.35 7.35 0 0 1-2.856.569a7.3 7.3 0 0 1-2.855-.568a6 6 0 0 1-.79-.4a3 3 0 0 1-.307-.202l-.005-.004a.75.75 0 0 1-.23-.896l3.368-7.68h-.886c-.351 0-.694-.106-.984-.303l-1.697-1.154a.25.25 0 0 0-.14-.043H12.75v14.5h4.487a.75.75 0 0 1 0 1.5H6.763a.75.75 0 0 1 0-1.5h4.487V6H9.275a.25.25 0 0 0-.14.043L7.439 7.197c-.29.197-.633.303-.984.303h-.886l3.368 7.68a.75.75 0 0 1-.209.878c-.08.065-.16.126-.31.223a6 6 0 0 1-.792.433a6.9 6.9 0 0 1-2.876.62a6.9 6.9 0 0 1-2.876-.62a6 6 0 0 1-.792-.433a4 4 0 0 1-.309-.221a.76.76 0 0 1-.21-.88L3.93 7.5H2.353a.75.75 0 0 1 0-1.5h4.102q.076 0 .141-.043l1.695-1.154c.29-.198.634-.303.985-.303h1.974V2.75a.75.75 0 0 1 1.5 0M2.193 15.198a5.4 5.4 0 0 0 2.557.635a5.4 5.4 0 0 0 2.557-.635L4.75 9.368Zm14.51-.024q.123.06.275.126c.53.223 1.305.45 2.272.45a5.85 5.85 0 0 0 2.547-.576L19.25 9.367Z" />
+                        </svg>
                     </div>
                     <div>
                         <h3>Responsabilidad</h3>
