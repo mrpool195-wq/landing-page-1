@@ -35,3 +35,8 @@ Texto secundario: #6E6D70
 ### 1 principal: #4F4E50;
 ### 2 secundario: #000000;
 ### 3 subtitulos: #3B3A3C;
+
+
+# hacer que funcione el submit para enviar los datos
+
+1-crear validaciones para los campos del formulario: 

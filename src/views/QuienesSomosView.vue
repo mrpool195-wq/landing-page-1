@@ -17,6 +17,7 @@
         <div class="contenedor flex gap-[10vw] justify-center contenedor-mision">
             <div class="w-1/2">
                 <img src="../assets/img/compu1.jpg" alt="" class="rounded-[40px]">
+
             </div>
             <div class="w-1/2">
                 <h3 class="h3-mision">Mision</h3>
@@ -28,6 +29,10 @@
                 </p>
             </div>
         </div>
+        <!-- <div
+            class="w-1/2 bg-transparent bg-[radial-gradient(var(--color-pricipal),transparent_1px)] bg-[size:20px_20px] h-100">
+
+        </div> -->
     </section>
 
     <section class="section bg-(--subtitulos)">
@@ -36,11 +41,12 @@
 
     <section class="section">
         <div class="contenedor">
-            <div class="valores-container p-4">
-                <h2 class="">Nuestros Valores</h2>
-                <div class="p-6 flex gap-8 border border-(--color-neutro) rounded-xl bg-(--color-neutro) mt-4">
+            <h2 class="">Nuestros Valores</h2>
+            <div class="valores-container p-4 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+
+                <div class="relative p-6 gap-8 border border-(--color-neutro) rounded-xl bg-(--color-neutro) mt-4 ">
                     <div
-                        class="elemento-valor bg-(--color-pricipal) text-white rounded-full w-15 h-15 flex items-center justify-center flex-shrink-0">
+                        class="elemento-valor absolute top-[-30px] left-[-30px] bg-(--color-pricipal) text-white rounded-full w-15 h-15 flex items-center justify-center flex-shrink-0">
                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
                             <g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
                                 stroke-width="2">
@@ -62,7 +68,103 @@
                     </div>
                 </div>
 
-                <div class="p-6 flex gap-8 border border-(--color-neutro) rounded-xl bg-(--color-neutro) mt-4">
+                <div class="relative p-6 gap-8 border border-(--color-neutro) rounded-xl bg-(--color-neutro) mt-4 ">
+                    <div
+                        class="elemento-valor absolute top-[-30px] left-[-30px] bg-(--color-pricipal) text-white rounded-full w-15 h-15 flex items-center justify-center flex-shrink-0">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 14 14">
+                            <g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round">
+                                <path
+                                    d="M12.5.5h-11a1 1 0 0 0-1 1v11a1 1 0 0 0 1 1h11a1 1 0 0 0 1-1v-11a1 1 0 0 0-1-1" />
+                                <path d="M7 .5v2.132a1.5 1.5 0 1 0 0 2.236v4.264a1.5 1.5 0 1 1 0 2.236V13.5" />
+                                <path d="M.5 7h2.132a1.5 1.5 0 1 0 2.236 0h4.264a1.5 1.5 0 1 1 2.236 0H13.5" />
+                            </g>
+                        </svg>
+                    </div>
+                    <div>
+                        <h3>Colaboración</h3>
+                        <p>Trabajamos en estrecha alianza con nuestros clientes, construyendo relaciones basadas en la
+                            comunicación abierta y el trabajo en equipo. Entendemos que el éxito tecnológico requiere la
+                            participación activa de ambas partes, por lo que fomentamos el intercambio de conocimientos,
+                            la
+                            capacitación y la co-creación de soluciones que realmente respondan a sus desafíos
+                            operativos.</p>
+                    </div>
+                </div>
+
+                <div class="relative p-6 gap-8 border border-(--color-neutro) rounded-xl bg-(--color-neutro) mt-4 ">
+                    <div
+                        class="elemento-valor absolute top-[-30px] left-[-30px] bg-(--color-pricipal) text-white rounded-full w-15 h-15 flex items-center justify-center flex-shrink-0">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                            <g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                stroke-width="2">
+                                <path
+                                    d="M4 13a8 8 0 0 1 7 7a6 6 0 0 0 3-5a9 9 0 0 0 6-8a3 3 0 0 0-3-3a9 9 0 0 0-8 6a6 6 0 0 0-5 3" />
+                                <path d="M7 14a6 6 0 0 0-3 6a6 6 0 0 0 6-3m4-8a1 1 0 1 0 2 0a1 1 0 1 0-2 0" />
+                            </g>
+                        </svg>
+                    </div>
+                    <div>
+                        <h3>Proactividad</h3>
+                        <p>Anticipamos las necesidades tecnológicas de nuestros clientes antes de que se conviertan en
+                            problemas
+                            críticos. Monitoreamos constantemente el rendimiento de los sistemas, identificamos
+                            oportunidades de
+                            mejora y recomendamos actualizaciones o soluciones preventivas que optimicen la
+                            infraestructura
+                            tecnológica y eviten interrupciones en las operaciones del negocio.</p>
+                    </div>
+                </div>
+
+                <div class="relative p-6 gap-8 border border-(--color-neutro) rounded-xl bg-(--color-neutro) mt-4 ">
+                    <div
+                        class="elemento-valor absolute top-[-30px] left-[-30px] bg-(--color-pricipal) text-white rounded-full w-15 h-15 flex items-center justify-center flex-shrink-0">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                            <g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                stroke-width="2">
+                                <path
+                                    d="M4 13a8 8 0 0 1 7 7a6 6 0 0 0 3-5a9 9 0 0 0 6-8a3 3 0 0 0-3-3a9 9 0 0 0-8 6a6 6 0 0 0-5 3" />
+                                <path d="M7 14a6 6 0 0 0-3 6a6 6 0 0 0 6-3m4-8a1 1 0 1 0 2 0a1 1 0 1 0-2 0" />
+                            </g>
+                        </svg>
+                    </div>
+                    <div>
+                        <h3>Proactividad</h3>
+                        <p>Anticipamos las necesidades tecnológicas de nuestros clientes antes de que se conviertan en
+                            problemas
+                            críticos. Monitoreamos constantemente el rendimiento de los sistemas, identificamos
+                            oportunidades de
+                            mejora y recomendamos actualizaciones o soluciones preventivas que optimicen la
+                            infraestructura
+                            tecnológica y eviten interrupciones en las operaciones del negocio.</p>
+                    </div>
+                </div>
+
+                <div class="relative p-6 gap-8 border border-(--color-neutro) rounded-xl bg-(--color-neutro) mt-4 ">
+                    <div
+                        class="elemento-valor absolute top-[-30px] left-[-30px] bg-(--color-pricipal) text-white rounded-full w-15 h-15 flex items-center justify-center flex-shrink-0">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                            <g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                stroke-width="2">
+                                <path
+                                    d="M4 13a8 8 0 0 1 7 7a6 6 0 0 0 3-5a9 9 0 0 0 6-8a3 3 0 0 0-3-3a9 9 0 0 0-8 6a6 6 0 0 0-5 3" />
+                                <path d="M7 14a6 6 0 0 0-3 6a6 6 0 0 0 6-3m4-8a1 1 0 1 0 2 0a1 1 0 1 0-2 0" />
+                            </g>
+                        </svg>
+                    </div>
+                    <div>
+                        <h3>Proactividad</h3>
+                        <p>Anticipamos las necesidades tecnológicas de nuestros clientes antes de que se conviertan en
+                            problemas
+                            críticos. Monitoreamos constantemente el rendimiento de los sistemas, identificamos
+                            oportunidades de
+                            mejora y recomendamos actualizaciones o soluciones preventivas que optimicen la
+                            infraestructura
+                            tecnológica y eviten interrupciones en las operaciones del negocio.</p>
+                    </div>
+                </div>
+
+
+                <!-- <div class="p-6 flex gap-8 border border-(--color-neutro) rounded-xl bg-(--color-neutro) mt-4">
                     <div
                         class="elemento-valor bg-(--color-pricipal) text-white rounded-full w-15 h-15 flex items-center justify-center flex-shrink-0">
                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 14 14">
@@ -150,7 +252,7 @@
                             derivado de
                             nuestros servicios hasta la completa satisfacción del cliente</p>
                     </div>
-                </div>
+                </div> -->
 
 
 
